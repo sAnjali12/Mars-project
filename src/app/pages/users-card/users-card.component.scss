@@ -1,0 +1,57 @@
+
+.card {
+    border-radius: 20px;
+    height: 100%;
+}
+.heading {
+    font-weight: 600;
+    text-shadow: 1px 2px 5px rgb(32, 32, 32);
+}
+.card .user-picture img {
+    position: absolute;
+    top: -20%;
+    right: 9%;
+    background: #f8f9fa!important;
+    padding: 10px;
+    height: 130;
+    width: 130;
+    filter: drop-shadow(10px 5px 10px rgb(27, 27, 27));
+}
+.card .user-content .user-name {
+    margin-right: 150px;
+    font-weight: 600;
+}
+
+.cards {
+    filter: drop-shadow(1px 5px 10px rgb(33, 33, 33));
+    margin: 4vw 5vw;
+    padding: 1vw 5vw;
+    background-color: rgb(137, 173, 185);
+}
+
+.dark-theme{
+    background-color: rgb(99, 99, 99);
+    filter: drop-shadow(1px 5px 10px rgb(33, 33, 33));
+    .card .user-picture img {
+        background: #1f1f1f!important;
+        filter: drop-shadow(10px 5px 10px rgb(141, 94, 94));
+    }
+    .heading {
+        text-shadow: 1px 2px 5px rgb(255, 255, 255);
+    }
+    .card {
+        border-radius: 20px;
+        height: 100%;
+        background-color: black;
+        color: white;
+    }
+    p{
+        color: white;
+    }
+    
+}
+
+.icons{
+    padding-left: 45VW;
+    cursor: pointer;
+}

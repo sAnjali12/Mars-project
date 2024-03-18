@@ -1,0 +1,34 @@
+    <main>
+        <section id="cards" class="cards">
+            <div class="container py-2">
+                <div class="row pb-4">
+                    <div class="icons">   
+                        <fa-icon *ngIf="!darkMode" [icon]="faCloudMoon" (click)="toggleTheme()"></fa-icon>
+                        <fa-icon *ngIf="darkMode" [icon]="faSun" (click)="toggleTheme()"></fa-icon>
+                    </div>
+                    <div class="col-12 text-center">
+                        <div class="heading fs-3">Our Team</div>
+                    </div>
+                  
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 mb-4 pt-5" *ngFor="let user of userList">
+                        <div class="card shadow-sm border-0">
+                            <div class="card-body">
+                                <div class="user-picture">
+                                    <img [src]="user.avatar" class="shadow-sm rounded-circle" />
+                                </div>
+                                <div class="user-content">
+                                    <h5 class="text-capitalize user-name">{{ user.first_name }}</h5>
+                                    <p class="text-capitalize small ">{{user.email }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- /cards -->
+        </section>
+    </main>
+
